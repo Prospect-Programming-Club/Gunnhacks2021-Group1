@@ -3,6 +3,14 @@ const Parse = require('parse/node')
 Parse.initialize('APP ID', 'MASTER ID')
 Parse.serverURL = 'http://localhost:1337/parse'
 
+const express = require('express')
+const path = require('path')
+const handlebars = require('handlebars')
+const exphbs = require('express-handlebars')
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
+const bodyparser = require('body-parser')
+
+
 
 /**
  * Needs to:
