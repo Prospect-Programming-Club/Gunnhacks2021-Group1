@@ -2,6 +2,7 @@
 // compatible API routes.
 
 const express = require('express');
+var cors = require("cors");
 const ParseServer = require('parse-server').ParseServer;
 const path = require('path');
 const args = process.argv || [];
@@ -32,6 +33,7 @@ const app = express();
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
+app.use(cors());
 // Serve the Parse API on the /parse URL prefix
 const mountPath = process.env.PARSE_MOUNT || '/parse';
 if (!test) {
