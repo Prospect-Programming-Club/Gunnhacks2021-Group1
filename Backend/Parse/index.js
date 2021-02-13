@@ -9,6 +9,36 @@ const path = require('path');
 const args = process.argv || [];
 const test = args.some(arg => arg.includes('jasmine'));
 
+
+const Parse = require('parse/node')
+Parse.initialize('app')
+Parse.serverURL = 'http://localhost:1337/parse'
+
+async function run() {
+  class Message extends Parse.Object {
+    constructor() {
+      // Pass the ClassName to the Parse.Object constructor
+      super('Message');
+      // All other initialization
+    }
+  
+    static createNewMessage(text, users) {
+      const message = new Message();
+      message.set("text", text)
+      message.set("users", users)
+      return message;
+    }
+  }
+
+  let message = Message.createNewMessage("28739843", ["343565", "34546222"])
+  message.save()
+
+}
+
+
+
+run()
+
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 const databaseUri = "";
 
@@ -33,6 +63,8 @@ const app = express();
 
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, '/public')));
+
+app.use('backend.js', express.static(path.join(__dirname, '/backend.js')));
 
 app.use(cors());
 // Serve the Parse API on the /parse URL prefix
