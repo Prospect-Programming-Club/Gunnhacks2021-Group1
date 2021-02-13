@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { AsyncStorage } from "react-native";
+var Parse = require("parse/react-native");
+
 function App() {
   return (
     <div className="App">
