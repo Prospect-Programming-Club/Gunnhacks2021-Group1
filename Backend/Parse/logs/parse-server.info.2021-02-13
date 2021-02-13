@@ -2,3 +2,51 @@
 {"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T20:11:05.085Z"}
 {"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T20:16:39.637Z"}
 {"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T19:30:56.928Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T20:31:03.085Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T20:32:41.675Z"}
+{"message":"Class Message already exists.","code":103,"level":"error","stack":"Error: Class Message already exists.\n    at SchemaController.validateNewClass (/Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/SchemaController.js:1044:13)\n    at SchemaController.addClassIfNotExists (/Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/SchemaController.js:901:32)\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Routers/SchemasRouter.js:70:28\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T20:33:01.272Z"}
+{"message":"Class Message already exists.","code":103,"level":"error","stack":"Error: Class Message already exists.\n    at SchemaController.validateNewClass (/Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/SchemaController.js:1044:13)\n    at SchemaController.addClassIfNotExists (/Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/SchemaController.js:901:32)\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Routers/SchemasRouter.js:70:28\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T20:33:10.977Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T20:33:19.265Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T20:33:38.444Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T20:34:50.459Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T21:55:23.946Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T21:56:06.101Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T21:58:04.198Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:01:43.388Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:04:22.070Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:09:57.178Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:31:56.349Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:34:56.256Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:40:35.403Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:45:32.708Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:46:06.587Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:46:48.383Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:51:31.904Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:52:29.858Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:52:30.926Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:53:32.141Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:54:26.886Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:54:27.862Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:56:03.777Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:56:04.846Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:56:15.181Z"}
+{"message":"Object not found.","code":101,"level":"error","stack":"Error: Object not found.\n    at /Users/grady/Documents/GitHub/Gunnhacks2021-Group1/Backend/Parse/node_modules/parse-server/lib/Controllers/DatabaseController.js:580:17\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","timestamp":"2021-02-13T22:56:16.174Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T22:56:25.008Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:02:39.359Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:04:27.433Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:05:16.469Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:10:34.336Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:11:49.539Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:12:18.920Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:13:15.841Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:22:26.792Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:22:30.492Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:37:21.313Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:41:56.690Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:42:23.297Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:42:47.695Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:43:08.134Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:43:52.335Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:44:23.432Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:44:56.691Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2021-02-13T23:45:13.451Z"}

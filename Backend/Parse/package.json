@@ -9,11 +9,16 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
     "cors": "^2.8.5",
     "express": "4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
     "kerberos": "1.1.4",
     "parse": "2.19.0",
-    "parse-server": "4.5.0"
+    "parse-dashboard": "^2.1.0",
+    "parse-server": "4.5.0",
+    "path": "^0.12.7"
   },
   "scripts": {
     "start": "node index.js",

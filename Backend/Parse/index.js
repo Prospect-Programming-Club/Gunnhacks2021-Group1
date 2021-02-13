@@ -4,12 +4,65 @@
 const express = require('express');
 var cors = require("cors");
 const ParseServer = require('parse-server').ParseServer;
+const ParseDashboard = require('parse-dashboard');
 const path = require('path');
 const args = process.argv || [];
 const test = args.some(arg => arg.includes('jasmine'));
 
+
+const Parse = require('parse/node')
+Parse.initialize('app')
+Parse.serverURL = 'http://localhost:1337/parse'
+
+class Message extends Parse.Object {
+  constructor() {
+    // Pass the ClassName to the Parse.Object constructor
+    super('Message');
+    // All other initialization
+  }
+
+  static createNewMessage(text, users) {
+    const message = new Message();
+    message.set("text", text)
+    message.set("users", users)
+    return message;
+  }
+}
+async function run() {
+  
+
+  let message = Message.createNewMessage("28739843", ["34356aaaaa5", "34546222"])
+  message.save().then((message) => {}, (error) => {
+    alert("Failed to create message object; error code: " + error.message);
+  })
+}
+
+// used to add a user to a message after they
+async function addUserToMessage(messageID, newUser) {
+  let query = new Parse.Query(Message)
+  query.get(messageID).then((message) => {
+    let priorUsers = message.get("users")
+    let users = []
+    priorUsers.forEach(user => {
+      users.push(user);
+    });
+    users.push(newUser);
+    message.set("users", users)
+    message.save()
+  }, (error) => {
+    alert("Failed to add user to message object; error code: " + error.message);
+  })
+}
+
+
+
+
+
+// run()
+// addUserToMessage("ZtQfcIwfl6", "aaaaaaxxxxj")
+
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-const databaseUri = "mongodb+srv://user1:fL421yCZvHDyIlDW@testcluster.glsgg.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const databaseUri = "mongodb+srv://user1:avBtw3up15Hb7eLU@testcluster.glsgg.mongodb.net/testing?retryWrites=true&w=majority";
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
@@ -40,6 +93,22 @@ if (!test) {
   const api = new ParseServer(config);
   app.use(mountPath, api);
 }
+
+var dashboard = new ParseDashboard(
+  {
+    "apps": [
+      {
+        "serverURL": "http://localhost:1337/parse",
+        "appId": "app",
+        "masterKey": "master",
+        "appName": "MyApp"
+      }
+    ]
+  }
+);
+
+// make the Parse Dashboard available at /dashboard
+app.use("/dashboard", dashboard);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function (req, res) {
