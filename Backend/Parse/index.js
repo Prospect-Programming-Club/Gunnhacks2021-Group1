@@ -120,6 +120,10 @@ app.use("/dashboard", dashboard);
 var testAPIRouter = require('./testAPI');
 app.use("/testAPI", testAPIRouter);
 
+app.get('/message', function (req, res) {
+  console.log(res.text())
+})
+
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function (req, res) {
