@@ -4,6 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const serverURL = "http://localhost"
+
+fetch(serverURL + '/uuid', {
+  method: 'POST'
+})
+.then(response => response.json())
+.then(data => {
+  console.log("Sucess: " + data);
+})
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

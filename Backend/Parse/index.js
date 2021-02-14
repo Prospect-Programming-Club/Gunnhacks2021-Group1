@@ -9,7 +9,7 @@ const path = require('path');
 const args = process.argv || [];
 const test = args.some(arg => arg.includes('jasmine'));
 const bodyParser = require("body-parser")
-
+const key = require('./admin')
 
 const Parse = require('parse/node')
 Parse.initialize('app')
@@ -72,7 +72,7 @@ async function giveMessageToUser() {
 // addUserToMessage("ZtQfcIwfl6", "aaaaaaxxxxj")
 
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-const databaseUri = "mongodb+srv://user1:oHnZgphvQZFAuB5b@testcluster.glsgg.mongodb.net/testing?retryWrites=true&w=majority";
+const databaseUri = key;
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
@@ -135,6 +135,9 @@ app.use("/testAPI", testAPIRouter);
 
 var messageAPIRouter = require('./api/messageAPI');
 app.use("/messageAPI", messageAPIRouter);
+
+var uuidAPIRouter = require('./api/uuidAPI');
+app.use("/uuidAPI", uuidAPIRouter);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function (req, res) {
