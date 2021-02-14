@@ -152,7 +152,7 @@ app.get('/test', function (req, res) {
 const port = process.env.PORT || 1337;
 if (!test) {
   const httpServer = require('http').createServer(app);
-  httpServer.listen(port, function () {
+  httpServer.listen(port, '0.0.0.0', function () {
     console.log('Parse server running on port ' + port + '.');
   });
   // This will enable the Live Query real-time server
