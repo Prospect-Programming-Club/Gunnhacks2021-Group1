@@ -1,7 +1,7 @@
 {
-  "name": "Parse Server Example",
+  "name": "prospect-gunnhacks-group1",
   "description": "An example Parse API server using the parse-server module",
-  "repository": "https://github.com/ParsePlatform/parse-server-example",
+  "repository": "https://github.com/Prospect-Programming-Club/Gunnhacks2021-Group1",
   "logo": "https://avatars0.githubusercontent.com/u/1294580?v=3&s=200",
   "keywords": ["node", "express", "parse"],
   "env": {
@@ -19,9 +19,8 @@
     },
     "SERVER_URL": {
       "description": "URL to connect to your Heroku instance (update with your app's name + PARSE_MOUNT)",
-      "value": "http://yourappname.herokuapp.com/parse"
+      "value": "http://prospect-gunnhacks-group1.herokuapp.com/parse"
     }
   },
-  "image": "heroku/nodejs",
-  "addons": ["mongolab"]
+  "image": "heroku/nodejs"
 }
