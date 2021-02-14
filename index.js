@@ -115,8 +115,8 @@ var dashboard = new ParseDashboard(
     ],
     "users": [
       {
-        "user": process.env.DASH_USER,
-        "pass": process.env.DASH_PASS
+        "user": "abcde",
+        "pass": "qwerty"
       }
     ]
   }
