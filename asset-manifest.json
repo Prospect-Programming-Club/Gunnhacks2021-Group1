@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Gunnhacks2021-Group1/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/Gunnhacks2021-Group1/static/js/main.188142a8.chunk.js",
-    "main.js.map": "/Gunnhacks2021-Group1/static/js/main.188142a8.chunk.js.map",
-    "runtime-main.js": "/Gunnhacks2021-Group1/static/js/runtime-main.369c0aac.js",
-    "runtime-main.js.map": "/Gunnhacks2021-Group1/static/js/runtime-main.369c0aac.js.map",
-    "static/js/2.ec12e85e.chunk.js": "/Gunnhacks2021-Group1/static/js/2.ec12e85e.chunk.js",
-    "static/js/2.ec12e85e.chunk.js.map": "/Gunnhacks2021-Group1/static/js/2.ec12e85e.chunk.js.map",
-    "static/js/3.e7ea44b8.chunk.js": "/Gunnhacks2021-Group1/static/js/3.e7ea44b8.chunk.js",
-    "static/js/3.e7ea44b8.chunk.js.map": "/Gunnhacks2021-Group1/static/js/3.e7ea44b8.chunk.js.map",
+    "main.css": "/Gunnhacks2021-Group1/static/css/main.6fcd484b.chunk.css",
+    "main.js": "/Gunnhacks2021-Group1/static/js/main.04cc54ab.chunk.js",
+    "main.js.map": "/Gunnhacks2021-Group1/static/js/main.04cc54ab.chunk.js.map",
+    "runtime-main.js": "/Gunnhacks2021-Group1/static/js/runtime-main.adcc9457.js",
+    "runtime-main.js.map": "/Gunnhacks2021-Group1/static/js/runtime-main.adcc9457.js.map",
+    "static/js/2.2d7435b3.chunk.js": "/Gunnhacks2021-Group1/static/js/2.2d7435b3.chunk.js",
+    "static/js/2.2d7435b3.chunk.js.map": "/Gunnhacks2021-Group1/static/js/2.2d7435b3.chunk.js.map",
+    "static/js/3.bb2500f5.chunk.js": "/Gunnhacks2021-Group1/static/js/3.bb2500f5.chunk.js",
+    "static/js/3.bb2500f5.chunk.js.map": "/Gunnhacks2021-Group1/static/js/3.bb2500f5.chunk.js.map",
     "index.html": "/Gunnhacks2021-Group1/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/Gunnhacks2021-Group1/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.ec12e85e.chunk.js.LICENSE.txt": "/Gunnhacks2021-Group1/static/js/2.ec12e85e.chunk.js.LICENSE.txt",
+    "static/css/main.6fcd484b.chunk.css.map": "/Gunnhacks2021-Group1/static/css/main.6fcd484b.chunk.css.map",
+    "static/js/2.2d7435b3.chunk.js.LICENSE.txt": "/Gunnhacks2021-Group1/static/js/2.2d7435b3.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/Gunnhacks2021-Group1/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.369c0aac.js",
-    "static/js/2.ec12e85e.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.188142a8.chunk.js"
+    "static/js/runtime-main.adcc9457.js",
+    "static/js/2.2d7435b3.chunk.js",
+    "static/css/main.6fcd484b.chunk.css",
+    "static/js/main.04cc54ab.chunk.js"
   ]
 }
