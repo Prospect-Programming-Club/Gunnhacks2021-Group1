@@ -4,15 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const serverURL = "http://localhost"
-
-fetch(serverURL + '/uuid', {
-  method: 'POST'
-})
-.then(response => response.json())
-.then(data => {
-  console.log("Sucess: " + data);
-})
+const serverURL = "http://localhost:1337"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,3 +17,5 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+export { serverURL };

@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-
+import { serverURL } from './index'
+import { checkForUUID } from './retrieveUUID'
 import AsyncStorage from '@react-native-async-storage/async-storage';
- 
+
 var test = {"text": "hello"};
 
 class App extends React.Component{
@@ -14,13 +15,13 @@ class App extends React.Component{
 
   callAPI() {
     
-    fetch("http://localhost:1337/testAPI")
+    fetch(serverURL + "/testAPI")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }))
         .catch(err => err);
     
       
-    fetch('http://localhost:1337/messageAPI ', {
+    fetch(serverURL + "/messageAPI", {
       method: 'POST',
       headers: {
         'Content-type': 'application/json' // The type of data you're sending
@@ -30,10 +31,10 @@ class App extends React.Component{
     .then((info) => { console.log(info); });
   }
 
-  componentWillMount() {
-      this.callAPI();
-      console.log("ran");
-  } 
+  componentDidMount() {
+    checkForUUID().then((response) => console.log(response));
+    this.callAPI();
+  }
 
   render(){
     return (
