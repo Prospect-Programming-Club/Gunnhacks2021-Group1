@@ -11,7 +11,7 @@ class App extends React.Component{
   }
 
   callAPI() {
-      fetch("http://localhost:9000/testAPI")
+      fetch("http://localhost:1337/testAPI")
           .then(res => res.text())
           .then(res => this.setState({ apiResponse: res }))
           .catch(err => err);
@@ -29,7 +29,7 @@ class App extends React.Component{
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <h1>Messege <code>this.state.apiResponse</code> !!</h1>
+          <h1>Messege <code>{this.state.apiResponse}</code> !!</h1>
           <a
             className="App-link"
             href="https://reactjs.org"
