@@ -8,6 +8,7 @@ const ParseDashboard = require('parse-dashboard');
 const path = require('path');
 const args = process.argv || [];
 const test = args.some(arg => arg.includes('jasmine'));
+const bodyParser = require("body-parser")
 
 
 const Parse = require('parse/node')
@@ -62,7 +63,7 @@ async function addUserToMessage(messageID, newUser) {
 // addUserToMessage("ZtQfcIwfl6", "aaaaaaxxxxj")
 
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-const databaseUri = "";
+const databaseUri = "mongodb+srv://user1:oHnZgphvQZFAuB5b@testcluster.glsgg.mongodb.net/testing?retryWrites=true&w=majority";
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
@@ -87,6 +88,9 @@ const app = express();
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
 app.use(cors());
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 // Serve the Parse API on the /parse URL prefix
 const mountPath = process.env.PARSE_MOUNT || '/parse';
 if (!test) {
@@ -117,13 +121,11 @@ var dashboard = new ParseDashboard(
 app.use("/dashboard", dashboard);
 
 
-var testAPIRouter = require('./testAPI');
+var testAPIRouter = require('./api/testAPI');
 app.use("/testAPI", testAPIRouter);
 
-app.get('/message', function (req, res) {
-  console.log(res.text())
-})
-
+var messageAPIRouter = require('./api/messageAPI');
+app.use("/messageAPI", messageAPIRouter);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function (req, res) {
