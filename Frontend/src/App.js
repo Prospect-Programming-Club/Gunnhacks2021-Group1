@@ -11,14 +11,19 @@ class App extends React.Component{
   }
 
   callAPI() {
-      fetch("http://localhost:1337/testAPI")
-          .then(res => res.text())
-          .then(res => this.setState({ apiResponse: res }))
-          .catch(err => err);
+      // fetch("http://localhost:1337/testAPI")
+      //     .then(res => res.text())
+      //     .then(res => this.setState({ apiResponse: res }))
+      //     .catch(err => err);
   }
 
   componentWillMount() {
-      this.callAPI();
+      // this.callAPI();
+      fetch('http://localhost:1337/message', {
+          method: 'POST',
+          body: "Hello",
+          headers: { 'Content-Type': 'application/json' }
+      });
   }
 
   render(){
