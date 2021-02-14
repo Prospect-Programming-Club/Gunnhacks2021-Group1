@@ -72,7 +72,7 @@ async function giveMessageToUser() {
 // addUserToMessage("ZtQfcIwfl6", "aaaaaaxxxxj")
 
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-const databaseUri = process.env.databaseURI;
+const databaseUri = process.env.DATABSE_URI;
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
