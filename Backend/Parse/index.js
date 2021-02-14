@@ -62,7 +62,7 @@ async function addUserToMessage(messageID, newUser) {
 // addUserToMessage("ZtQfcIwfl6", "aaaaaaxxxxj")
 
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-const databaseUri = "mongodb+srv://user1:avBtw3up15Hb7eLU@testcluster.glsgg.mongodb.net/testing?retryWrites=true&w=majority";
+const databaseUri = "";
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
@@ -103,12 +103,23 @@ var dashboard = new ParseDashboard(
         "masterKey": "master",
         "appName": "MyApp"
       }
+    ],
+    "users": [
+      {
+        "user": "abcde",
+        "pass": "qwerty"
+      }
     ]
   }
 );
 
 // make the Parse Dashboard available at /dashboard
 app.use("/dashboard", dashboard);
+
+
+var testAPIRouter = require('./testAPI');
+app.use("/testAPI", testAPIRouter);
+
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function (req, res) {
