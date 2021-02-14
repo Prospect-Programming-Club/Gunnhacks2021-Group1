@@ -28,14 +28,6 @@ class Message extends Parse.Object {
     return message;
   }
 }
-async function run() {
-  
-
-  let message = Message.createNewMessage("28739843", ["34356aaaaa5", "34546222"])
-  message.save().then((message) => {}, (error) => {
-    alert("Failed to create message object; error code: " + error.message);
-  })
-}
 
 // used to add a user to a message after they
 async function addUserToMessage(messageID, newUser) {
@@ -54,15 +46,32 @@ async function addUserToMessage(messageID, newUser) {
   })
 }
 
+// used to add new messages from users' first message
+async function addMessageFromUser(jsonString) {
+  var json = JSON.parse(jsonString)
+  Message.createNewMessage(json.text, json.users).save().then((message) => {}, (error) => {
+    alert("Failed to create message object; error code: " + error.message);
+  })
+}
 
+// used to direct messages to users as JSON strings
+async function giveMessageToUser() {
+  messageID = 0; // TODO: change the message ID to relevant way to decide which message is shared.
+  let jsonString;
+  let message = query.get(messageID).then((message) => {
+    jsonString = JSON.stringify({
+      "text": message.get("text"), "users": message.get("users")
+    })
+  });
+  // TODO: use jsonString to return to the user
+}
 
+// addMessageFromUser('{"text": "Peter", "users": ["yes", "n"]}')
 
-
-// run()
 // addUserToMessage("ZtQfcIwfl6", "aaaaaaxxxxj")
 
 // const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-const databaseUri = "";
+const databaseUri = "mongodb+srv://user1:oHnZgphvQZFAuB5b@testcluster.glsgg.mongodb.net/testing?retryWrites=true&w=majority";
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
