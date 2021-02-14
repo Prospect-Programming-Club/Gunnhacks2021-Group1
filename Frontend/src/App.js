@@ -4,6 +4,8 @@ import React from 'react';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
  
+var test = {"text": "hello"};
+
 class App extends React.Component{
   constructor(props) {
     super(props);
@@ -11,20 +13,27 @@ class App extends React.Component{
   }
 
   callAPI() {
-      // fetch("http://localhost:1337/testAPI")
-      //     .then(res => res.text())
-      //     .then(res => this.setState({ apiResponse: res }))
-      //     .catch(err => err);
+    
+    fetch("http://localhost:1337/testAPI")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }))
+        .catch(err => err);
+    
+      
+    fetch('http://localhost:1337/messageAPI ', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json' // The type of data you're sending
+      },
+      body: JSON.stringify(test)
+    }).then((result) => result.text())
+    .then((info) => { console.log(info); });
   }
 
   componentWillMount() {
-      // this.callAPI();
-      fetch('http://localhost:1337/message', {
-          method: 'POST',
-          body: "Hello",
-          headers: { 'Content-Type': 'application/json' }
-      });
-  }
+      this.callAPI();
+      console.log("ran");
+  } 
 
   render(){
     return (
