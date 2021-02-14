@@ -108,15 +108,15 @@ var dashboard = new ParseDashboard(
     "apps": [
       {
         "serverURL": "http://localhost:1337/parse",
-        "appId": "app",
-        "masterKey": "master",
+        "appId": process.env.APP_ID,
+        "masterKey": process.env.MASTER_KEY,
         "appName": "MyApp"
       }
     ],
     "users": [
       {
-        "user": "abcde",
-        "pass": "qwerty"
+        "user": process.env.DASH_USER,
+        "pass": process.env.DASH_PASS
       }
     ]
   }
